@@ -10,6 +10,7 @@ function addDays(date: string, days: number): Date {
 
 const generateTwitterLink = (series: number, part: number, episode: number, searchWord: string, untilDays: number = 3): string => {
   try{
+    console.log(`generateTwitterLink, series ${series}, part ${part}, episode ${episode}`);
     const episodeInfo = TerahaInfo[series - 1].parts[part - 1].episodes[episode - 1];
     if (episodeInfo) {
       const since = episodeInfo.date;
@@ -19,29 +20,32 @@ const generateTwitterLink = (series: number, part: number, episode: number, sear
     }
     return "https://twitter.com/home";
   } catch(e){
+    console.error(e);
     return "https://twitter.com/home";
   }
 }
 
 const Teraha = () => {
-  const [series, setSeries] = useState(1);
-  const [part, setPart] = useState(1);
-  const [episode, setEpisode] = useState(1);
-  const [searchWord, setSearchWord] = useState("テラハ");
-  const [twitterLink, setTwitterLink] = useState("https://twitter.com/home");
+  const [terahaState, setTerahaState] = useState({
+    series: 1,
+    part: 1,
+    episode: 1,
+    searchWord: "テラハ",
+    twitterLink: generateTwitterLink(1, 1, 1, "テラハ")
+  });
 
   const jsxParts: JSX.Element[] = [];
 
-  const seriesInfo = TerahaInfo[series - 1];
+  const seriesInfo = TerahaInfo[terahaState.series - 1];
   for (let i = 1; i <= seriesInfo.parts.length; i++) {
-    jsxParts.push(<option value={i}>Part {i}</option>)
+    jsxParts.push(<option value={i} key={i}>Part {i}</option>)
   }
 
   const jsxEpisodes: JSX.Element[] = [];
-  const partInfo = seriesInfo.parts[part - 1];
+  const partInfo = seriesInfo.parts[terahaState.part - 1];
   if (partInfo){
     for (let i = 1; i <= partInfo.episodes.length; i++) {
-      jsxEpisodes.push(<option value={i}>Episode {i}: {partInfo.episodes[i - 1].title}</option>)
+      jsxEpisodes.push(<option value={i} key={i}>Episode {i}: {partInfo.episodes[i - 1].title}</option>)
     }
   }
 
@@ -50,9 +54,14 @@ const Teraha = () => {
       <h1>テラハ放送直後のTwitter</h1>
       <form action="">
         {/* Choose Series */}
-        <select name="series" id="series" defaultValue={series} onChange={(e) =>{
-          setSeries(parseInt(e.target.value));
-          setTwitterLink(generateTwitterLink(series, part, episode, searchWord));
+        <select name="series" id="series" defaultValue={terahaState.series} onChange={ (e) =>{
+          setTerahaState(() => {
+            const tsCopy = JSON.parse(JSON.stringify(terahaState));
+            tsCopy.series = parseInt(e.target.value);
+            tsCopy.twitterLink = generateTwitterLink(tsCopy.series, tsCopy.part, tsCopy.episode, tsCopy.searchWord);
+            console.log(tsCopy);
+            return tsCopy;
+          });
         }}>
           <option value="1">BOYS×GIRLS NEXT DOOR (2012–2014, 湘南)</option>
           <option value="2">BOYS & GIRLS IN THE CITY (2015-2016, 東京)</option>
@@ -61,26 +70,38 @@ const Teraha = () => {
           <option value="5">TOKYO (2019-2020, 東京)</option>
         </select>
         {/* Choose Part */}
-        <select name="part" id="part" defaultValue={part} onChange={(e) =>{
-          setPart(parseInt(e.target.value));
-          setTwitterLink(generateTwitterLink(series, part, episode, searchWord));
-        }}>
+        <select name="part" id="part" defaultValue={terahaState.part} onChange={ (e) =>{
+          setTerahaState(() => {
+            const tsCopy = JSON.parse(JSON.stringify(terahaState));
+            tsCopy.part = parseInt(e.target.value);
+            tsCopy.twitterLink = generateTwitterLink(tsCopy.series, tsCopy.part, tsCopy.episode, tsCopy.searchWord);
+            return tsCopy;
+          });        
+          }}>
           {jsxParts}
         </select>
         {/* Choose Episode */}
-        <select name="episode" id="episode" defaultValue={episode} onChange={(e) =>{
-          setEpisode(parseInt(e.target.value));
-          setTwitterLink(generateTwitterLink(series, part, episode, searchWord));
-        }}>
+        <select name="episode" id="episode" defaultValue={terahaState.episode} onChange={(e) =>{
+          setTerahaState(() => {
+            const tsCopy = JSON.parse(JSON.stringify(terahaState));
+            tsCopy.episode = parseInt(e.target.value);
+            tsCopy.twitterLink = generateTwitterLink(tsCopy.series, tsCopy.part, tsCopy.episode, tsCopy.searchWord);
+            return tsCopy;
+          });       
+          }}>
           {jsxEpisodes}
         </select>
-        <input type="text" name="searchWord" id="searchWord" defaultValue={searchWord} onChange={(e) =>{
-          setSearchWord(e.target.value);
-          setTwitterLink(generateTwitterLink(series, part, episode, searchWord));
+        <input type="text" name="searchWord" id="searchWord" defaultValue={terahaState.searchWord} onChange={(e) =>{
+          setTerahaState(() => {
+            const tsCopy = JSON.parse(JSON.stringify(terahaState));
+            tsCopy.searchWord = e.target.value;
+            tsCopy.twitterLink = generateTwitterLink(tsCopy.series, tsCopy.part, tsCopy.episode, tsCopy.searchWord);
+            return tsCopy;
+          });
         }}/>
       </form>
       <div>
-        <a href={twitterLink} target="_blank" rel="noopener noreferrer"><h2>Twitterへのリンク</h2></a>
+        <a href={terahaState.twitterLink} target="_blank" rel="noopener noreferrer"><h2>Twitterへのリンク</h2></a>
       </div>
     </div>
   )
