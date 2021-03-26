@@ -146,7 +146,8 @@ class Teraha extends React.Component<{}, terahaState> {
 
     return (
       <div>
-        <h1>テラハ放送直後のTwitter</h1>
+        <h1>テラハ配信直後のTwitter</h1>
+        <Box>Netflix配信直後のTwitterの様子を確認できます。</Box>
         <Box mb={2}>現在は軽井沢編のみをサポートしています。</Box>
         <form onSubmit={this.handleSubmit}>
           <Box mb={2} color="text.primary">
