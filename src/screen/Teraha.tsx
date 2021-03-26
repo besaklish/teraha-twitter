@@ -147,6 +147,7 @@ class Teraha extends React.Component<{}, terahaState> {
     return (
       <div>
         <h1>テラハ放送直後のTwitter</h1>
+        <Box mb={2}>現在は軽井沢編のみをサポートしています。</Box>
         <form onSubmit={this.handleSubmit}>
           <Box mb={2} color="text.primary">
             <FormControl>
