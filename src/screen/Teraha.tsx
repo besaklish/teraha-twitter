@@ -214,7 +214,7 @@ class Teraha extends React.Component<{}, terahaState> {
           </Box>
           <Box mb={2}>
             <div>
-              <Button type="submit">👆Twitterへのリンク👆</Button>
+              <Button type="submit">☛Twitterへのリンク☚</Button>
             </div>
           </Box>
         </form>
