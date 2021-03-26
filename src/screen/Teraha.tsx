@@ -2,6 +2,14 @@ import React, { useState } from 'react';
 import TerahaInfo from "./Teraha.json";
 
 
+interface terahaState{
+  series: number,
+  part: number,
+  episode: number,
+  searchWord: string,
+  twitterLink: string
+};
+
 function addDays(date: string, days: number): Date {
   var result = new Date(date);
   result.setDate(result.getDate() + days);
@@ -25,8 +33,9 @@ const generateTwitterLink = (series: number, part: number, episode: number, sear
   }
 }
 
+
 const Teraha = () => {
-  const [terahaState, setTerahaState] = useState({
+  const [terahaState, setTerahaState] = useState<terahaState>({
     series: 1,
     part: 1,
     episode: 1,
