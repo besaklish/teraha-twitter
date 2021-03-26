@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/teraha-twitter/static/css/main.2e4c875b.chunk.css",
-    "main.js": "/teraha-twitter/static/js/main.b438200a.chunk.js",
-    "main.js.map": "/teraha-twitter/static/js/main.b438200a.chunk.js.map",
+    "main.js": "/teraha-twitter/static/js/main.31972ddb.chunk.js",
+    "main.js.map": "/teraha-twitter/static/js/main.31972ddb.chunk.js.map",
     "runtime-main.js": "/teraha-twitter/static/js/runtime-main.1ab6a8d3.js",
     "runtime-main.js.map": "/teraha-twitter/static/js/runtime-main.1ab6a8d3.js.map",
     "static/js/2.8b3ea147.chunk.js": "/teraha-twitter/static/js/2.8b3ea147.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.1ab6a8d3.js",
     "static/js/2.8b3ea147.chunk.js",
     "static/css/main.2e4c875b.chunk.css",
-    "static/js/main.b438200a.chunk.js"
+    "static/js/main.31972ddb.chunk.js"
   ]
 }
