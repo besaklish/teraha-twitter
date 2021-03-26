@@ -1,5 +1,12 @@
 import React from "react";
 import TerahaInfo from "./Teraha.json";
+import Box from "@material-ui/core/Box";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormControl from "@material-ui/core/FormControl";
+import Select from "@material-ui/core/Select";
+import TextField from "@material-ui/core/TextField";
+import Button from "@material-ui/core/Button";
 
 // interfaces
 interface terahaState {
@@ -61,21 +68,21 @@ class Teraha extends React.Component<{}, terahaState> {
     }
   }
 
-  handleSeriesChange(e: React.ChangeEvent<HTMLSelectElement>) {
+  handleSeriesChange(e: React.ChangeEvent<{ value: unknown }>) {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
-    tsCopy.series = parseInt(e.target.value);
+    tsCopy.series = parseInt(e.target.value as string);
     this.setState(tsCopy);
   }
 
-  handlePartChange(e: React.ChangeEvent<HTMLSelectElement>) {
+  handlePartChange(e: React.ChangeEvent<{ value: unknown }>) {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
-    tsCopy.part = parseInt(e.target.value);
+    tsCopy.part = parseInt(e.target.value as string);
     this.setState(tsCopy);
   }
 
-  handleEpisodeChange(e: React.ChangeEvent<HTMLSelectElement>) {
+  handleEpisodeChange(e: React.ChangeEvent<{ value: unknown }>) {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
-    tsCopy.episode = parseInt(e.target.value);
+    tsCopy.episode = parseInt(e.target.value as string);
     this.setState(tsCopy);
   }
 
@@ -119,9 +126,9 @@ class Teraha extends React.Component<{}, terahaState> {
     const seriesInfo = TerahaInfo[this.state.series - 1];
     for (let i = 1; i <= seriesInfo.parts.length; i++) {
       jsxParts.push(
-        <option value={i} key={i}>
+        <MenuItem value={i} key={i}>
           Part {i}
-        </option>
+        </MenuItem>
       );
     }
 
@@ -130,9 +137,9 @@ class Teraha extends React.Component<{}, terahaState> {
     if (partInfo) {
       for (let i = 1; i <= partInfo.episodes.length; i++) {
         jsxEpisodes.push(
-          <option value={i} key={i}>
+          <MenuItem value={i} key={i}>
             Episode {i}: {partInfo.episodes[i - 1].title}
-          </option>
+          </MenuItem>
         );
       }
     }
@@ -141,57 +148,75 @@ class Teraha extends React.Component<{}, terahaState> {
       <div>
         <h1>テラハ放送直後のTwitter</h1>
         <form onSubmit={this.handleSubmit}>
-          <div>
-            {/* Choose Series */}
-            <select
-              name="series"
-              id="series"
-              defaultValue={this.state.series}
-              onChange={this.handleSeriesChange}
-            >
-              <option value="1">BOYS×GIRLS NEXT DOOR (2012–2014, 湘南)</option>
-              <option value="2">
-                BOYS & GIRLS IN THE CITY (2015-2016, 東京)
-              </option>
-              <option value="3">ALOHA STATE (2016-2017, ハワイ)</option>
-              <option value="4">OPENING NEW DOORS (2017-2018, 軽井沢)</option>
-              <option value="5">TOKYO (2019-2020, 東京)</option>
-            </select>
-          </div>
-          <div>
-            {/* Choose Part */}
-            <select
-              name="part"
-              id="part"
-              defaultValue={this.state.part}
-              onChange={this.handlePartChange}
-            >
-              {jsxParts}
-            </select>
-          </div>
-          <div>
-            {/* Choose Episode */}
-            <select
-              name="episode"
-              id="episode"
-              defaultValue={this.state.episode}
-              onChange={this.handleEpisodeChange}
-            >
-              {jsxEpisodes}
-            </select>
-          </div>
-          <div>
-            <input
-              type="text"
-              name="searchWord"
-              id="searchWord"
-              defaultValue={this.state.searchWord}
-              onChange={this.handleSearchWordChange}
-            />
-          </div>
-          <div>
-            <button type="submit">Twitterへのリンク</button>
-          </div>
+          <Box mb={2} color="text.primary">
+            <FormControl>
+              {/* Choose Series */}
+              <InputLabel>シリーズ</InputLabel>
+              <Select
+                name="series"
+                id="series"
+                defaultValue={this.state.series}
+                onChange={this.handleSeriesChange}
+              >
+                <MenuItem value="1">
+                  BOYS×GIRLS NEXT DOOR (2012–2014, 湘南)
+                </MenuItem>
+                <MenuItem value="2">
+                  BOYS & GIRLS IN THE CITY (2015-2016, 東京)
+                </MenuItem>
+                <MenuItem value="3">ALOHA STATE (2016-2017, ハワイ)</MenuItem>
+                <MenuItem value="4">
+                  OPENING NEW DOORS (2017-2018, 軽井沢)
+                </MenuItem>
+                <MenuItem value="5">TOKYO (2019-2020, 東京)</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+          <Box mb={2}>
+            <FormControl>
+              {/* Choose Part */}
+              <InputLabel>パート</InputLabel>
+              <Select
+                name="part"
+                id="part"
+                defaultValue={this.state.part}
+                onChange={this.handlePartChange}
+              >
+                {jsxParts}
+              </Select>
+            </FormControl>
+          </Box>
+          <Box mb={2}>
+            <FormControl>
+              {/* Choose Episode */}
+              <InputLabel>エピソード</InputLabel>
+              <Select
+                name="episode"
+                id="episode"
+                defaultValue={this.state.episode}
+                onChange={this.handleEpisodeChange}
+              >
+                {jsxEpisodes}
+              </Select>
+            </FormControl>
+          </Box>
+          <Box mb={2}>
+            <FormControl>
+              <TextField
+                type="text"
+                name="searchWord"
+                id="searchWord"
+                defaultValue={this.state.searchWord}
+                onChange={this.handleSearchWordChange}
+                variant="outlined"
+              />
+            </FormControl>
+          </Box>
+          <Box mb={2}>
+            <div>
+              <Button type="submit">👆Twitterへのリンク👆</Button>
+            </div>
+          </Box>
         </form>
       </div>
     );
