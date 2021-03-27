@@ -754,6 +754,122 @@
   },
   {
     "season": 4,
+    "members": [
+      {
+        "name": "小室安未",
+        "nicknames": ["あみ", "安未"],
+        "startEp": 1,
+        "endEp": 17
+      },
+      {
+        "name": "新井雄大",
+        "nicknames": ["雄大", "ゆうだい"],
+        "startEp": 1,
+        "endEp": 9
+      },
+      {
+        "name": "治田みずき",
+        "nicknames": ["みずき"],
+        "startEp": 1,
+        "endEp": 9
+      },
+      {
+        "name": "中村貴之",
+        "nicknames": ["寮長", "たかちゃんマン", "たか"],
+        "startEp": 1,
+        "endEp": 34
+      },
+      {
+        "name": "佐藤つば冴",
+        "nicknames": ["つばさ"],
+        "startEp": 1,
+        "endEp": 21
+      },
+      {
+        "name": "岡本至恩",
+        "nicknames": ["しおん", "至恩"],
+        "startEp": 1,
+        "endEp": 21
+      },
+      {
+        "name": "上村翔平",
+        "nicknames": ["しょうへい"],
+        "startEp": 10,
+        "endEp": 31
+      },
+      {
+        "name": "島袋聖南",
+        "nicknames": ["せいな"],
+        "startEp": 10,
+        "endEp": 34
+      },
+      {
+        "name": "小瀬田麻由",
+        "nicknames": ["まゆ"],
+        "startEp": 17,
+        "endEp": 26
+      },
+      {
+        "name": "田中優衣",
+        "nicknames": ["ゆい"],
+        "startEp": 22,
+        "endEp": 49
+      },
+      {
+        "name": "石倉ノア",
+        "nicknames": ["ノア"],
+        "startEp": 22,
+        "endEp": 34
+      },
+      {
+        "name": "又来綾",
+        "nicknames": ["あや"],
+        "startEp": 26,
+        "endEp": 38
+      },
+      {
+        "name": "池添俊亮",
+        "nicknames": ["しゅんすけ"],
+        "startEp": 32,
+        "endEp": 38
+      },
+      {
+        "name": "中田海斗",
+        "nicknames": ["かいと"],
+        "startEp": 35,
+        "endEp": 49
+      },
+      {
+        "name": "木佐貫まや",
+        "nicknames": ["まや"],
+        "startEp": 35,
+        "endEp": 49
+      },
+      {
+        "name": "河野聡太",
+        "nicknames": ["そうた"],
+        "startEp": 35,
+        "endEp": 42
+      },
+      {
+        "name": "福田愛大",
+        "nicknames": ["あいお"],
+        "startEp": 38,
+        "endEp": 49
+      },
+      {
+        "name": "谷川利沙子",
+        "nicknames": ["りさこ", "りちゃこ"],
+        "startEp": 38,
+        "endEp": 49
+      },
+      {
+        "name": "和田理生",
+        "nicknames": ["まさお"],
+        "startEp": 42,
+        "endEp": 49
+      }
+    ],
     "parts": [
       {
         "part": 1,
@@ -1101,6 +1217,62 @@
   },
   {
     "season": 5,
+    "members": [
+      {
+        "name": "渡邉香織",
+        "nicknames": ["かおり"],
+        "startEp": 1,
+        "endEp": 20
+      },
+      {
+        "name": "松嵜翔平",
+        "nicknames": ["しょうへい"],
+        "startEp": 1,
+        "endEp": 18
+      },
+      {
+        "name": "奥山春花",
+        "nicknames": ["はるか"],
+        "startEp": 1,
+        "endEp": 25
+      },
+      {
+        "name": "吉原健司",
+        "nicknames": ["ケニー", "けんじ"],
+        "startEp": 1,
+        "endEp": 14
+      },
+      {
+        "name": "田辺莉咲子",
+        "nicknames": ["りさこ"],
+        "startEp": 1,
+        "endEp": 25
+      },
+      {
+        "name": "西野入流佳",
+        "nicknames": ["るか", "にしのいり"],
+        "startEp": 1,
+        "endEp": 25
+      },
+      {
+        "name": "水越愛華",
+        "nicknames": ["えみか"],
+        "startEp": 14,
+        "endEp": 34
+      },
+      {
+        "name": "デュラト・ジュゼッペ",
+        "nicknames": ["ぺっぺ"],
+        "startEp": 14,
+        "endEp": 26
+      },
+      {
+        "name": "田渡凌",
+        "nicknames": ["りょう"],
+        "startEp": 18,
+        "endEp": 32
+      }
+    ],
     "parts": [
       {
         "part": 1,
