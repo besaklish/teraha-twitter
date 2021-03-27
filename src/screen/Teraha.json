@@ -771,6 +771,118 @@
   },
   {
     "season": 5,
-    "parts": []
+    "parts": [
+      {
+        "part": 1,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2019-05-14",
+            "title": "We're Back in Tokyo"
+          },
+          {
+            "number": 2,
+            "date": "2019-05-21",
+            "title": "Tempura Incident"
+          },
+          {
+            "number": 3,
+            "date": "2019-05-28",
+            "title": "Dreamed of Her"
+          },
+          {
+            "number": 4,
+            "date": "2019-06-04",
+            "title": "I Want to Be a Hero"
+          },
+          {
+            "number": 5,
+            "date": "2019-06-18",
+            "title": "Reiwa!!"
+          },
+          {
+            "number": 6,
+            "date": "2019-06-25",
+            "title": "The Grass is Greener on the Other Side"
+          },
+          {
+            "number": 7,
+            "date": "2019-07-02",
+            "title": "Woman to Treat and Woman to Split the Check"
+          },
+          {
+            "number": 8,
+            "date": "2019-07-09",
+            "title": "Passive Boys"
+          },
+          {
+            "number": 9,
+            "date": "2019-07-23",
+            "title": "Girlfight"
+          },
+          {
+            "number": 10,
+            "date": "2019-07-30",
+            "title": "The Boy That Gets Treated"
+          },
+          {
+            "number": 11,
+            "date": "2019-08-06",
+            "title": "Broccoli Pasta, Carbonara-Style"
+          },
+          {
+            "number": 12,
+            "date": "2019-08-13",
+            "title": "Always Chillin'"
+          }
+        ]
+      },
+      {
+        "part": 2,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2019-08-27",
+            "title": "All Or Nothing"
+          },
+          {
+            "number": 2,
+            "date": "2019-09-03",
+            "title": "Just A Moment, Please"
+          },
+          {
+            "number": 3,
+            "date": "2019-09-10",
+            "title": "A Man's Worth Is Determined By His Job"
+          },
+          {
+            "number": 4,
+            "date": "2019-09-17",
+            "title": "Orange Flavor First Kiss"
+          },
+          {
+            "number": 5,
+            "date": "2019-10-01",
+            "title": "This is Not a Place to Slack"
+          },
+          {
+            "number": 6,
+            "date": "2019-10-08",
+            "title": "Bros Before Hoes"
+          },
+          {
+            "number": 7,
+            "date": "2019-10-15",
+            "title": "The Stray Sheep"
+          }
+        ]
+      }
+    ]
   }
 ]
