@@ -31,8 +31,6 @@ class Teraha extends React.Component<{}, terahaState> {
     this.addDays = this.addDays.bind(this);
     this.handleSeriesChange = this.handleSeriesChange.bind(this);
     this.handlePartChange = this.handlePartChange.bind(this);
-    this.handleEpisodeChange = this.handleEpisodeChange.bind(this);
-    this.handleSearchWordChange = this.handleSearchWordChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -77,18 +75,6 @@ class Teraha extends React.Component<{}, terahaState> {
   handlePartChange(e: React.ChangeEvent<{ value: unknown }>) {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
     tsCopy.part = parseInt(e.target.value as string);
-    this.setState(tsCopy);
-  }
-
-  handleEpisodeChange(e: React.ChangeEvent<{ value: unknown }>) {
-    const tsCopy = JSON.parse(JSON.stringify(this.state));
-    tsCopy.episode = parseInt(e.target.value as string);
-    this.setState(tsCopy);
-  }
-
-  handleSearchWordChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const tsCopy = JSON.parse(JSON.stringify(this.state));
-    tsCopy.searchWord = e.target.value;
     this.setState(tsCopy);
   }
 
@@ -198,7 +184,6 @@ class Teraha extends React.Component<{}, terahaState> {
                 name="episode"
                 id="episode"
                 defaultValue={this.state.episode}
-                onChange={this.handleEpisodeChange}
               >
                 {jsxEpisodes}
               </Select>
@@ -211,7 +196,6 @@ class Teraha extends React.Component<{}, terahaState> {
                 name="searchWord"
                 id="searchWord"
                 defaultValue={this.state.searchWord}
-                onChange={this.handleSearchWordChange}
                 variant="outlined"
               />
             </FormControl>
