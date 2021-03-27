@@ -403,6 +403,104 @@
   },
   {
     "season": 3,
+    "members": [
+      {
+        "name": "ローレン・サイ",
+        "nicknames": ["ローレン"],
+        "startEp": 1,
+        "endEp": 17
+      },
+      {
+        "name": "澁澤侑哉",
+        "nicknames": ["ゆうや"],
+        "startEp": 1,
+        "endEp": 22
+      },
+      {
+        "name": "エビアン・クー",
+        "nicknames": ["エビアン"],
+        "startEp": 1,
+        "endEp": 22
+      },
+      {
+        "name": "エリック デ メンドンサ",
+        "nicknames": ["エリック"],
+        "startEp": 1,
+        "endEp": 12
+      },
+      {
+        "name": "フランク奈緒美ロレイン",
+        "nicknames": ["なおみ"],
+        "startEp": 1,
+        "endEp": 10
+      },
+      {
+        "name": "鮎澤悠介",
+        "nicknames": ["ゆうすけ"],
+        "startEp": 1,
+        "endEp": 10
+      },
+      {
+        "name": "羽石杏奈",
+        "nicknames": ["あんな"],
+        "startEp": 10,
+        "endEp": 25
+      },
+      {
+        "name": "玉城大志",
+        "nicknames": ["たいし", "ギルティ―侍", "ギルティ侍"],
+        "startEp": 10,
+        "endEp": 36
+      },
+      {
+        "name": "佐藤魁",
+        "nicknames": ["ガイ"],
+        "startEp": 12,
+        "endEp": 30
+      },
+      {
+        "name": "丹羽仁希",
+        "nicknames": ["ニキ", "Niki"],
+        "startEp": 17,
+        "endEp": 25
+      },
+      {
+        "name": "シェリ・マリア・澄川・ラボエ",
+        "nicknames": ["シェリー", "ラボエ"],
+        "startEp": 22,
+        "endEp": 36
+      },
+      {
+        "name": "中嶋ウェスリー",
+        "nicknames": ["ウェズ"],
+        "startEp": 22,
+        "endEp": 36
+      },
+      {
+        "name": "長谷川 ジェニファー ミラ",
+        "nicknames": ["ミラ"],
+        "startEp": 25,
+        "endEp": 30
+      },
+      {
+        "name": "福山智可子",
+        "nicknames": ["ちか", "ちかこ"],
+        "startEp": 26,
+        "endEp": 36
+      },
+      {
+        "name": "新田満里子",
+        "nicknames": ["まりこ"],
+        "startEp": 30,
+        "endEp": 36
+      },
+      {
+        "name": "関川良",
+        "nicknames": ["りょう"],
+        "startEp": 30,
+        "endEp": 36
+      }
+    ],
     "parts": [
       {
         "part": 1,
