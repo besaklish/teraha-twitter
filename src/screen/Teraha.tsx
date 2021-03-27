@@ -8,12 +8,17 @@ import Select from "@material-ui/core/Select";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 
+// bad variables
+const WRONG_TWITTER_LINK = "https://twitter.com/home";
+const WRONG_DATE_STRING = "1900-01-01";
+
 // interfaces
 interface terahaState {
   series: number;
   part: number;
   episode: number;
   searchWord: string;
+  broadcastType: "Netflix" | "TV";
 }
 
 // main component
@@ -25,6 +30,7 @@ class Teraha extends React.Component<{}, terahaState> {
       part: 1,
       episode: 1,
       searchWord: "テラスハウス",
+      broadcastType: "Netflix",
     };
 
     this.generateTwitterLink = this.generateTwitterLink.bind(this);
@@ -45,6 +51,7 @@ class Teraha extends React.Component<{}, terahaState> {
     part: number,
     episode: number,
     searchWord: string,
+    broadcastType: "Netflix" | "TV",
     untilDays: number = 3
   ): string {
     try {
@@ -54,15 +61,21 @@ class Teraha extends React.Component<{}, terahaState> {
       const episodeInfo =
         TerahaInfo[series - 1].parts[part - 1].episodes[episode - 1];
       if (episodeInfo) {
-        const since = episodeInfo.netflixDate;
+        const since =
+          broadcastType === "Netflix"
+            ? episodeInfo.netflixDate
+            : episodeInfo.tvDate;
+        if (since === WRONG_DATE_STRING) {
+          return WRONG_TWITTER_LINK;
+        }
         const untilDate = this.addDays(since, untilDays);
         const until = untilDate.toISOString().slice(0, 10);
         return `https://twitter.com/search?q=${searchWord}%20until%3A${until}%20since%3A${since}`;
       }
-      return "https://twitter.com/home";
+      return WRONG_TWITTER_LINK;
     } catch (e) {
       console.error(e);
-      return "https://twitter.com/home";
+      return WRONG_TWITTER_LINK;
     }
   }
 
@@ -85,6 +98,7 @@ class Teraha extends React.Component<{}, terahaState> {
     const part = parseInt(formData.get("part") as string);
     const episode = parseInt(formData.get("episode") as string);
     const searchWord = formData.get("searchWord") as string;
+    const broadcastType = formData.get("broadcastType") as "Netflix" | "TV";
     if (series && part && episode) {
       this.setState({
         series: series,
@@ -101,10 +115,18 @@ class Teraha extends React.Component<{}, terahaState> {
       series,
       part,
       episode,
-      searchWord
+      searchWord,
+      broadcastType
     );
-    window.open(twitterLink, "_blank", "noopener,noreferrer");
-    console.log(e);
+
+    if (twitterLink === WRONG_TWITTER_LINK) {
+      alert(
+        "リンクの作成に失敗しました。\nTVで対応しているのは東京(2015-2016)のパート1,エピソード1～軽井沢(2017-2018)のパート3エピソード6までです。"
+      );
+    } else {
+      window.open(twitterLink, "_blank", "noopener,noreferrer");
+      console.log(e);
+    }
   }
 
   render() {
@@ -133,10 +155,6 @@ class Teraha extends React.Component<{}, terahaState> {
     return (
       <div>
         <h1>テラハ配信直後のTwitter</h1>
-        <Box>Netflix配信直後のTwitterの様子を確認できます。</Box>
-        <Box mb={2}>
-          現在は東京編以降(2015.09~2019.10)をサポートしています。
-        </Box>
         <form onSubmit={this.handleSubmit}>
           <Box mb={2} color="text.primary">
             <FormControl>
@@ -191,6 +209,20 @@ class Teraha extends React.Component<{}, terahaState> {
           </Box>
           <Box mb={2}>
             <FormControl>
+              {/* Choose Broadcast type */}
+              <InputLabel>放送</InputLabel>
+              <Select
+                name="broadcastType"
+                id="broadcastType"
+                defaultValue={this.state.broadcastType}
+              >
+                <MenuItem value="Netflix">Netflix</MenuItem>
+                <MenuItem value="TV">TV</MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+          <Box mb={2}>
+            <FormControl>
               <TextField
                 type="text"
                 name="searchWord"
@@ -206,6 +238,13 @@ class Teraha extends React.Component<{}, terahaState> {
             </div>
           </Box>
         </form>
+        <Box fontSize={15}>
+          Netflixは東京編以降(2015.09~2019.10)をサポートしています。
+        </Box>
+        <Box fontSize={15} mb={2}>
+          TVは東京(2015-2016)のパート1,エピソード1～軽井沢(2017-2018)のパート3,
+          エピソード6までをサポートしています。
+        </Box>
       </div>
     );
   }

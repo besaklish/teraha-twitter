@@ -1,8 +1,5 @@
 [
-  {
-    "season": 1,
-    "parts": []
-  },
+  { "season": 1, "parts": [] },
   {
     "season": 2,
     "parts": [
@@ -15,91 +12,109 @@
           {
             "number": 1,
             "netflixDate": "2015-09-02",
+            "tvDate": "2015-10-12",
             "title": "New Boys, New Girls, New City"
           },
           {
             "number": 2,
             "netflixDate": "2015-09-07",
+            "tvDate": "2015-10-19",
             "title": "Three Crushes"
           },
           {
             "number": 3,
             "netflixDate": "2015-09-14",
+            "tvDate": "2015-10-26",
             "title": "Dream Police"
           },
           {
             "number": 4,
             "netflixDate": "2015-09-21",
+            "tvDate": "2015-11-02",
             "title": "In Tears Again"
           },
           {
             "number": 5,
             "netflixDate": "2015-10-05",
+            "tvDate": "2015-11-09",
             "title": "Eenie Meenie Miney Mo"
           },
           {
             "number": 6,
             "netflixDate": "2015-10-12",
+            "tvDate": "2015-11-16",
             "title": "All Screwed Up"
           },
           {
             "number": 7,
             "netflixDate": "2015-10-19",
+            "tvDate": "2015-11-23",
             "title": "Showing His True Colors"
           },
           {
             "number": 8,
             "netflixDate": "2015-10-26",
+            "tvDate": "2015-11-30",
             "title": "Late Night Poolside"
           },
           {
             "number": 9,
             "netflixDate": "2015-11-09",
+            "tvDate": "2015-12-07",
             "title": "What a Good Day!"
           },
           {
             "number": 10,
             "netflixDate": "2015-11-16",
+            "tvDate": "2015-12-14",
             "title": "Before He Says the Word..."
           },
           {
             "number": 11,
             "netflixDate": "2015-11-23",
+            "tvDate": "2016-01-11",
             "title": "Boy from the Rainbow State"
           },
           {
             "number": 12,
             "netflixDate": "2015-11-30",
+            "tvDate": "2016-01-18",
             "title": "Is She Just Best of Three?"
           },
           {
             "number": 13,
             "netflixDate": "2015-12-14",
+            "tvDate": "2016-01-25",
             "title": "Who Will Survive?"
           },
           {
             "number": 14,
             "netflixDate": "2015-12-21",
+            "tvDate": "2016-02-01",
             "title": "Ikujinashi"
           },
           {
             "number": 15,
             "netflixDate": "2015-12-28",
+            "tvDate": "2016-02-08",
             "title": "Heating Up for Someone Else"
           },
           {
             "number": 16,
             "netflixDate": "2016-01-04",
+            "tvDate": "2016-02-15",
             "title": "Magic Spell Costco"
           },
           {
             "number": 17,
             "netflixDate": "2016-01-11",
+            "tvDate": "2016-02-22",
             "title": "Anywhere for You"
           },
           {
             "number": 18,
             "netflixDate": "2016-01-25",
+            "tvDate": "2016-02-29",
             "title": "Worst netflixDate Ever"
           }
         ]
@@ -113,141 +128,169 @@
           {
             "number": 19,
             "netflixDate": "2016-02-08",
+            "tvDate": "2016-04-11",
             "title": "A Christmas Nightmare"
           },
           {
             "number": 20,
             "netflixDate": "2016-02-15",
+            "tvDate": "2016-04-18",
             "title": "Scissorhands"
           },
           {
             "number": 21,
             "netflixDate": "2016-02-22",
+            "tvDate": "2016-04-25",
             "title": "Case of Poke Bowl"
           },
           {
             "number": 22,
             "netflixDate": "2016-02-29",
+            "tvDate": "2016-05-02",
             "title": "Case of the Meat"
           },
           {
             "number": 23,
             "netflixDate": "2016-03-14",
+            "tvDate": "2016-05-09",
             "title": "No Use Crying over Meat"
           },
           {
             "number": 24,
             "netflixDate": "2016-03-21",
+            "tvDate": "2016-05-16",
             "title": "New It-Girl in the City"
           },
           {
             "number": 25,
             "netflixDate": "2016-03-28",
+            "tvDate": "2016-05-23",
             "title": "Mr. Perfect in the City"
           },
           {
             "number": 26,
             "netflixDate": "2016-04-04",
+            "tvDate": "2016-05-30",
             "title": "Love Is in the Air"
           },
           {
             "number": 27,
             "netflixDate": "2016-04-11",
+            "tvDate": "2016-06-06",
             "title": "Always Smiling with You"
           },
           {
             "number": 28,
             "netflixDate": "2016-04-18",
+            "tvDate": "2016-06-13",
             "title": "Cry, Cry, Cry"
           },
           {
             "number": 29,
             "netflixDate": "2016-04-25",
+            "tvDate": "2016-06-20",
             "title": "Nightie Nightmare"
           },
           {
             "number": 30,
             "netflixDate": "2016-05-09",
+            "tvDate": "2016-06-27",
             "title": "Girl's Decision in Love"
           },
           {
             "number": 31,
             "netflixDate": "2016-05-23",
+            "tvDate": "2016-07-04",
             "title": "Natsumi & Fuyumi"
           },
           {
             "number": 32,
             "netflixDate": "2016-05-30",
+            "tvDate": "2016-07-11",
             "title": "Shall We Pas de Deux?"
           },
           {
             "number": 33,
             "netflixDate": "2016-06-06",
+            "tvDate": "2016-07-18",
             "title": "First Dip in the Pool"
           },
           {
             "number": 34,
             "netflixDate": "2016-06-13",
-            "title": "Hamburg × Hamburg"
+            "tvDate": "2016-07-25",
+            "title": "Hamburg \u00d7 Hamburg"
           },
           {
             "number": 35,
             "netflixDate": "2016-06-27",
+            "tvDate": "2016-08-02",
             "title": "Bye Bye Mr. Perfect"
           },
           {
             "number": 36,
             "netflixDate": "2016-07-04",
+            "tvDate": "2016-08-09",
             "title": "Byrnes Sandwich"
           },
           {
             "number": 37,
             "netflixDate": "2016-07-11",
+            "tvDate": "2016-08-16",
             "title": "Slow Down Your Love"
           },
           {
             "number": 38,
             "netflixDate": "2016-07-18",
+            "tvDate": "2016-08-23",
             "title": "Quick to Say I Love You"
           },
           {
             "number": 39,
             "netflixDate": "2016-08-02",
+            "tvDate": "2016-08-30",
             "title": "Rocket Girl Dives into Love"
           },
           {
             "number": 40,
             "netflixDate": "2016-08-09",
+            "tvDate": "2016-09-06",
             "title": "Midsummer Intimacy"
           },
           {
             "number": 41,
             "netflixDate": "2016-08-16",
+            "tvDate": "2016-09-13",
             "title": "Better Luck This Time"
           },
           {
             "number": 42,
             "netflixDate": "2016-08-23",
+            "tvDate": "2016-09-20",
             "title": "Fragile Boy, Fragile Girl"
           },
           {
             "number": 43,
             "netflixDate": "2016-09-06",
+            "tvDate": "2016-10-04",
             "title": "Kiss and Tell"
           },
           {
             "number": 44,
             "netflixDate": "2016-09-13",
+            "tvDate": "2016-10-11",
             "title": "Price of a Lie"
           },
           {
             "number": 45,
             "netflixDate": "2016-09-20",
+            "tvDate": "2016-10-18",
             "title": "The Riko Special"
           },
           {
             "number": 46,
             "netflixDate": "2016-09-27",
+            "tvDate": "2016-10-25",
             "title": "Bye Bye Terrace House in the City"
           }
         ]
@@ -266,41 +309,49 @@
           {
             "number": 1,
             "netflixDate": "2016-11-01",
+            "tvDate": "2016-11-28",
             "title": "Terrace House in Aloha State"
           },
           {
             "number": 2,
             "netflixDate": "2016-11-08",
+            "tvDate": "2016-12-05",
             "title": "The 18-Year-Old Madonna"
           },
           {
             "number": 3,
             "netflixDate": "2016-11-15",
+            "tvDate": "2016-12-12",
             "title": "The Reason Why He Can't Get a Girlfriend"
           },
           {
             "number": 4,
             "netflixDate": "2016-11-22",
+            "tvDate": "2016-12-19",
             "title": "More Than a Hug"
           },
           {
             "number": 5,
             "netflixDate": "2016-12-06",
+            "tvDate": "2017-01-09",
             "title": "Living in a Shared House Is Tough"
           },
           {
             "number": 6,
             "netflixDate": "2016-12-13",
+            "tvDate": "2017-01-16",
             "title": "Making My Move"
           },
           {
             "number": 7,
             "netflixDate": "2016-12-20",
+            "tvDate": "2017-01-23",
             "title": "She Is a Legend"
           },
           {
             "number": 8,
             "netflixDate": "2016-12-27",
+            "tvDate": "2017-01-30",
             "title": "Taste of Catfish on the First netflixDate"
           }
         ]
@@ -314,41 +365,49 @@
           {
             "number": 1,
             "netflixDate": "2017-01-10",
+            "tvDate": "2017-02-06",
             "title": "Black Tears"
           },
           {
             "number": 2,
             "netflixDate": "2017-01-17",
+            "tvDate": "2017-02-13",
             "title": "It's You"
           },
           {
             "number": 3,
             "netflixDate": "2017-01-24",
+            "tvDate": "2017-02-20",
             "title": "A Love to Die For"
           },
           {
             "number": 4,
             "netflixDate": "2017-01-31",
+            "tvDate": "2017-02-27",
             "title": "Pretty Guy"
           },
           {
             "number": 5,
             "netflixDate": "2017-02-14",
+            "tvDate": "2017-03-13",
             "title": "A Secret Crush"
           },
           {
             "number": 6,
             "netflixDate": "2017-02-21",
+            "tvDate": "2017-03-20",
             "title": "Love Kicks Off"
           },
           {
             "number": 7,
             "netflixDate": "2017-02-28",
+            "tvDate": "2017-04-10",
             "title": "One Direction"
           },
           {
             "number": 8,
             "netflixDate": "2017-03-07",
+            "tvDate": "2017-04-17",
             "title": "The Pipeline: Where Surfing Lives"
           }
         ]
@@ -362,41 +421,49 @@
           {
             "number": 1,
             "netflixDate": "2017-03-21",
+            "tvDate": "2017-04-24",
             "title": "Shirofune"
           },
           {
             "number": 2,
             "netflixDate": "2017-03-28",
+            "tvDate": "2017-05-01",
             "title": "Everyone's Sweetheart"
           },
           {
             "number": 3,
             "netflixDate": "2017-04-04",
+            "tvDate": "2017-05-08",
             "title": "A Long & Winding Road to Love"
           },
           {
             "number": 4,
             "netflixDate": "2017-04-11",
+            "tvDate": "2017-05-15",
             "title": "Guilty Samurai"
           },
           {
             "number": 5,
             "netflixDate": "2017-04-25",
+            "tvDate": "2017-05-21",
             "title": "Plan it or Wing it"
           },
           {
             "number": 6,
             "netflixDate": "2017-05-02",
+            "tvDate": "2017-06-05",
             "title": "Losing the Lead Role"
           },
           {
             "number": 7,
             "netflixDate": "2017-05-09",
+            "tvDate": "2017-06-12",
             "title": "She's Not Much of a Nature-Lover"
           },
           {
             "number": 8,
             "netflixDate": "2017-05-16",
+            "tvDate": "2017-06-19",
             "title": "A Kiss in the Moment"
           }
         ]
@@ -410,61 +477,73 @@
           {
             "number": 1,
             "netflixDate": "2017-05-30",
+            "tvDate": "2017-07-03",
             "title": "I Love You, Sayonara"
           },
           {
             "number": 2,
             "netflixDate": "2017-06-06",
+            "tvDate": "2017-07-10",
             "title": "Erotic Frequency"
           },
           {
             "number": 3,
             "netflixDate": "2017-06-13",
+            "tvDate": "2017-07-17",
             "title": "No One Like You"
           },
           {
             "number": 4,
             "netflixDate": "2017-06-20",
+            "tvDate": "2017-07-24",
             "title": "Isn't She Just a Bitch?"
           },
           {
             "number": 5,
             "netflixDate": "2017-07-04",
+            "tvDate": "2017-07-31",
             "title": "Too Much"
           },
           {
             "number": 6,
             "netflixDate": "2017-07-11",
+            "tvDate": "2017-08-07",
             "title": "The Secret Hook Up"
           },
           {
             "number": 7,
             "netflixDate": "2017-07-18",
+            "tvDate": "2017-08-14",
             "title": "Lonesome Women"
           },
           {
             "number": 8,
             "netflixDate": "2017-07-25",
+            "tvDate": "2017-08-21",
             "title": "The Monster She Made"
           },
           {
             "number": 9,
             "netflixDate": "2017-08-08",
+            "tvDate": "2017-09-04",
             "title": "The Blues of Bruno Mars"
           },
           {
             "number": 10,
             "netflixDate": "2017-08-15",
+            "tvDate": "2017-09-11",
             "title": "Breakdown"
           },
           {
             "number": 11,
             "netflixDate": "2017-08-22",
+            "tvDate": "2017-09-18",
             "title": "Shinuhodo No Koi"
           },
           {
             "number": 12,
             "netflixDate": "2017-08-29",
+            "tvDate": "2017-09-25",
             "title": "Bye Bye Terrace House in Aloha State"
           }
         ]
@@ -483,41 +562,49 @@
           {
             "number": 1,
             "netflixDate": "2017-12-19",
+            "tvDate": "2018-01-22",
             "title": "Opening New Doors"
           },
           {
             "number": 2,
             "netflixDate": "2017-12-26",
+            "tvDate": "2018-01-29",
             "title": "A New Experience For Her"
           },
           {
             "number": 3,
             "netflixDate": "2018-01-02",
+            "tvDate": "2018-02-05",
             "title": "Captain Tsubasa"
           },
           {
             "number": 4,
             "netflixDate": "2018-01-09",
+            "tvDate": "2018-02-12",
             "title": "The Reason She Cried"
           },
           {
             "number": 5,
             "netflixDate": "2018-01-23",
+            "tvDate": "2018-02-19",
             "title": "Cocky Kid"
           },
           {
             "number": 6,
             "netflixDate": "2018-01-30",
+            "tvDate": "2018-02-26",
             "title": "First Snowfall"
           },
           {
             "number": 7,
             "netflixDate": "2018-02-06",
+            "tvDate": "2018-03-12",
             "title": "I Erased Him From My World"
           },
           {
             "number": 8,
             "netflixDate": "2018-02-13",
+            "tvDate": "2018-04-09",
             "title": "A Man with Different Values"
           }
         ]
@@ -531,41 +618,49 @@
           {
             "number": 1,
             "netflixDate": "2018-02-27",
+            "tvDate": "2018-04-16",
             "title": "She's the MVP"
           },
           {
             "number": 2,
             "netflixDate": "2018-03-06",
+            "tvDate": "2018-04-23",
             "title": "The Christmas Assassin"
           },
           {
             "number": 3,
             "netflixDate": "2018-03-13",
+            "tvDate": "2018-04-30",
             "title": "Best Actor in a Supporting Role"
           },
           {
             "number": 4,
             "netflixDate": "2018-03-20",
+            "tvDate": "2018-05-07",
             "title": "If Only You Were Five Years Younger"
           },
           {
             "number": 5,
             "netflixDate": "2018-04-03",
+            "tvDate": "2018-05-14",
             "title": "She Asks Too Much For Love"
           },
           {
             "number": 6,
             "netflixDate": "2018-04-10",
+            "tvDate": "2018-05-21",
             "title": "The Birthday That Decided Their Fate"
           },
           {
             "number": 7,
             "netflixDate": "2018-04-17",
+            "tvDate": "2018-05-28",
             "title": "The Mustache Tells the Story of Love"
           },
           {
             "number": 8,
             "netflixDate": "2018-04-24",
+            "tvDate": "2018-06-04",
             "title": "Life is Just a Little Too Late"
           }
         ]
@@ -579,41 +674,49 @@
           {
             "number": 1,
             "netflixDate": "2018-03-08",
+            "tvDate": "2018-06-11",
             "title": "Sinful Cleavage"
           },
           {
             "number": 2,
             "netflixDate": "2018-03-15",
+            "tvDate": "2018-06-25",
             "title": "Flower Bouquet for My Valentine"
           },
           {
             "number": 3,
             "netflixDate": "2018-03-22",
+            "tvDate": "2018-07-09",
             "title": "The Second Attempt"
           },
           {
             "number": 4,
             "netflixDate": "2018-03-29",
+            "tvDate": "2018-07-16",
             "title": "A Fairy on a Split Road"
           },
           {
             "number": 5,
             "netflixDate": "2018-06-12",
+            "tvDate": "2018-07-23",
             "title": "Tune-Up"
           },
           {
             "number": 6,
             "netflixDate": "2018-06-19",
+            "tvDate": "2018-07-30",
             "title": "Virgin"
           },
           {
             "number": 7,
             "netflixDate": "2018-06-26",
+            "tvDate": "1900-01-01",
             "title": "Meccha Me Too"
           },
           {
             "number": 8,
             "netflixDate": "2018-07-03",
+            "tvDate": "1900-01-01",
             "title": "Kiss Out Of Nowhere"
           }
         ]
@@ -627,41 +730,49 @@
           {
             "number": 1,
             "netflixDate": "2018-07-17",
+            "tvDate": "1900-01-01",
             "title": "The Fallen Angel"
           },
           {
             "number": 2,
             "netflixDate": "2018-07-24",
+            "tvDate": "1900-01-01",
             "title": "Better Than You"
           },
           {
             "number": 3,
             "netflixDate": "2018-07-31",
+            "tvDate": "1900-01-01",
             "title": "On the Night of Camp..."
           },
           {
             "number": 4,
             "netflixDate": "2018-08-07",
+            "tvDate": "1900-01-01",
             "title": "Declaration of War"
           },
           {
             "number": 5,
             "netflixDate": "2018-08-21",
+            "tvDate": "1900-01-01",
             "title": "Confessing Love at the Chapel"
           },
           {
             "number": 6,
             "netflixDate": "2018-08-28",
+            "tvDate": "1900-01-01",
             "title": "A Farce"
           },
           {
             "number": 7,
             "netflixDate": "2018-09-04",
+            "tvDate": "1900-01-01",
             "title": "Rambling Rose"
           },
           {
             "number": 8,
             "netflixDate": "2018-09-11",
+            "tvDate": "1900-01-01",
             "title": "The Last Love"
           }
         ]
@@ -675,41 +786,49 @@
           {
             "number": 1,
             "netflixDate": "2018-09-25",
+            "tvDate": "1900-01-01",
             "title": "It's Someone Else"
           },
           {
             "number": 2,
             "netflixDate": "2018-10-02",
+            "tvDate": "1900-01-01",
             "title": "Bye Bye, Miss Terrace House"
           },
           {
             "number": 3,
             "netflixDate": "2018-10-09",
+            "tvDate": "1900-01-01",
             "title": "Young Faces"
           },
           {
             "number": 4,
             "netflixDate": "2018-10-16",
+            "tvDate": "1900-01-01",
             "title": "Take Shelter from the Rain"
           },
           {
             "number": 5,
             "netflixDate": "2018-10-30",
+            "tvDate": "1900-01-01",
             "title": "First and Last netflixDate"
           },
           {
             "number": 6,
             "netflixDate": "2018-11-06",
+            "tvDate": "1900-01-01",
             "title": "The Goal-Getter and the Goalless"
           },
           {
             "number": 7,
             "netflixDate": "2018-11-13",
+            "tvDate": "1900-01-01",
             "title": "Like a Spell of Autumn Rain"
           },
           {
             "number": 8,
             "netflixDate": "2018-11-20",
+            "tvDate": "1900-01-01",
             "title": "A Man Who Can't be Described in Japanese"
           }
         ]
@@ -723,46 +842,55 @@
           {
             "number": 1,
             "netflixDate": "2018-12-04",
+            "tvDate": "1900-01-01",
             "title": "Embarrassing Rejections"
           },
           {
             "number": 2,
             "netflixDate": "2018-12-11",
+            "tvDate": "1900-01-01",
             "title": "To Have Become Critical"
           },
           {
             "number": 3,
             "netflixDate": "2018-12-18",
+            "tvDate": "1900-01-01",
             "title": "Booger Boy and Snoring Boy"
           },
           {
             "number": 4,
             "netflixDate": "2018-12-25",
+            "tvDate": "1900-01-01",
             "title": "Only the Apple Was Watching"
           },
           {
             "number": 5,
             "netflixDate": "2019-01-08",
+            "tvDate": "1900-01-01",
             "title": "Tattling"
           },
           {
             "number": 6,
             "netflixDate": "2019-01-15",
+            "tvDate": "1900-01-01",
             "title": "No Longer a Virgin"
           },
           {
             "number": 7,
             "netflixDate": "2019-01-22",
+            "tvDate": "1900-01-01",
             "title": "Still a Virgin"
           },
           {
             "number": 8,
             "netflixDate": "2019-02-05",
+            "tvDate": "1900-01-01",
             "title": "Walking Ritz-Carlton"
           },
           {
             "number": 9,
             "netflixDate": "2019-02-12",
+            "tvDate": "1900-01-01",
             "title": "Departure Whistle"
           }
         ]
@@ -781,61 +909,73 @@
           {
             "number": 1,
             "netflixDate": "2019-05-14",
+            "tvDate": "1900-01-01",
             "title": "We're Back in Tokyo"
           },
           {
             "number": 2,
             "netflixDate": "2019-05-21",
+            "tvDate": "1900-01-01",
             "title": "Tempura Incident"
           },
           {
             "number": 3,
             "netflixDate": "2019-05-28",
+            "tvDate": "1900-01-01",
             "title": "Dreamed of Her"
           },
           {
             "number": 4,
             "netflixDate": "2019-06-04",
+            "tvDate": "1900-01-01",
             "title": "I Want to Be a Hero"
           },
           {
             "number": 5,
             "netflixDate": "2019-06-18",
+            "tvDate": "1900-01-01",
             "title": "Reiwa!!"
           },
           {
             "number": 6,
             "netflixDate": "2019-06-25",
+            "tvDate": "1900-01-01",
             "title": "The Grass is Greener on the Other Side"
           },
           {
             "number": 7,
             "netflixDate": "2019-07-02",
+            "tvDate": "1900-01-01",
             "title": "Woman to Treat and Woman to Split the Check"
           },
           {
             "number": 8,
             "netflixDate": "2019-07-09",
+            "tvDate": "1900-01-01",
             "title": "Passive Boys"
           },
           {
             "number": 9,
             "netflixDate": "2019-07-23",
+            "tvDate": "1900-01-01",
             "title": "Girlfight"
           },
           {
             "number": 10,
             "netflixDate": "2019-07-30",
+            "tvDate": "1900-01-01",
             "title": "The Boy That Gets Treated"
           },
           {
             "number": 11,
             "netflixDate": "2019-08-06",
+            "tvDate": "1900-01-01",
             "title": "Broccoli Pasta, Carbonara-Style"
           },
           {
             "number": 12,
             "netflixDate": "2019-08-13",
+            "tvDate": "1900-01-01",
             "title": "Always Chillin'"
           }
         ]
@@ -849,36 +989,43 @@
           {
             "number": 1,
             "netflixDate": "2019-08-27",
+            "tvDate": "1900-01-01",
             "title": "All Or Nothing"
           },
           {
             "number": 2,
             "netflixDate": "2019-09-03",
+            "tvDate": "1900-01-01",
             "title": "Just A Moment, Please"
           },
           {
             "number": 3,
             "netflixDate": "2019-09-10",
+            "tvDate": "1900-01-01",
             "title": "A Man's Worth Is Determined By His Job"
           },
           {
             "number": 4,
             "netflixDate": "2019-09-17",
+            "tvDate": "1900-01-01",
             "title": "Orange Flavor First Kiss"
           },
           {
             "number": 5,
             "netflixDate": "2019-10-01",
+            "tvDate": "1900-01-01",
             "title": "This is Not a Place to Slack"
           },
           {
             "number": 6,
             "netflixDate": "2019-10-08",
+            "tvDate": "1900-01-01",
             "title": "Bros Before Hoes"
           },
           {
             "number": 7,
             "netflixDate": "2019-10-15",
+            "tvDate": "1900-01-01",
             "title": "The Stray Sheep"
           }
         ]
