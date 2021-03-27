@@ -85,7 +85,6 @@ class Teraha extends React.Component<{}, terahaState> {
     // get members
     const members = TerahaInfo[this.state.series - 1].members;
     if (members) {
-      alert(members);
       const appearingMembers = members.filter((member) => {
         console.log(member);
         console.log(this.state.episode);
