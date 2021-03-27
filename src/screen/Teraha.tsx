@@ -121,7 +121,7 @@ class Teraha extends React.Component<{}, terahaState> {
 
     if (twitterLink === WRONG_TWITTER_LINK) {
       alert(
-        "リンクの作成に失敗しました。\nTVで対応しているのは東京(2015-2016)のパート1,エピソード1～軽井沢(2017-2018)のパート3エピソード6までです。"
+        "リンクの作成に失敗しました。\nNetflixは東京編以降(2015.09~2019.10)をサポートしています。\nTVは東京(2015-2016)のパート1,エピソード1～軽井沢(2017-2018)のパート3,エピソード6までをサポートしています。"
       );
     } else {
       window.open(twitterLink, "_blank", "noopener,noreferrer");
