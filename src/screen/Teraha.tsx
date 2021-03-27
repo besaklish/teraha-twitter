@@ -36,8 +36,10 @@ class Teraha extends React.Component<{}, terahaState> {
     this.generateTwitterLink = this.generateTwitterLink.bind(this);
     this.generateSearchWord = this.generateSearchWord.bind(this);
     this.addDays = this.addDays.bind(this);
+    this.calcEpisodeNumber = this.calcEpisodeNumber.bind(this);
     this.handleSeriesChange = this.handleSeriesChange.bind(this);
     this.handlePartChange = this.handlePartChange.bind(this);
+    this.handleEpisodeChange = this.handleEpisodeChange.bind(this);
     this.handleSearchWordChange = this.handleSearchWordChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -57,9 +59,9 @@ class Teraha extends React.Component<{}, terahaState> {
     untilDays: number = 3
   ): string {
     try {
-      console.log(
-        `generateTwitterLink, series ${series}, part ${part}, episode ${episode}`
-      );
+      // console.log(
+      //   `generateTwitterLink, series ${series}, part ${part}, episode ${episode}`
+      // );
       const episodeInfo =
         TerahaInfo[series - 1].parts[part - 1].episodes[episode - 1];
       if (episodeInfo) {
@@ -81,18 +83,30 @@ class Teraha extends React.Component<{}, terahaState> {
     }
   }
 
+  calcEpisodeNumber(): number {
+    const season = TerahaInfo[this.state.series - 1];
+    const parts = season.parts;
+    const episodes = [];
+    for (let i = 0; i < this.state.part - 1; i++) {
+      for (const episode of parts[i].episodes) {
+        episodes.push(episode);
+      }
+    }
+    console.log(episodes.length);
+    console.log(this.state.episode);
+    return episodes.length + this.state.episode;
+  }
+
   generateSearchWord() {
     // get members
     const members = TerahaInfo[this.state.series - 1].members;
     if (members) {
+      const epNum = this.calcEpisodeNumber();
+      console.log(epNum);
       const appearingMembers = members.filter((member) => {
-        console.log(member);
-        console.log(this.state.episode);
-        return (
-          member.startEp <= this.state.episode &&
-          member.endEp >= this.state.episode
-        );
+        return member.startEp <= epNum && member.endEp >= epNum;
       });
+
       console.log(appearingMembers);
 
       const nicknames: string[] = [];
@@ -122,6 +136,12 @@ class Teraha extends React.Component<{}, terahaState> {
     this.setState(tsCopy);
   }
 
+  handleEpisodeChange(e: React.ChangeEvent<{ value: unknown }>) {
+    const tsCopy = JSON.parse(JSON.stringify(this.state));
+    tsCopy.episode = parseInt(e.target.value as string);
+    this.setState(tsCopy);
+  }
+
   handleSearchWordChange(e: React.ChangeEvent<HTMLInputElement>) {
     this.setState({ searchWord: e.target.value });
   }
@@ -141,11 +161,11 @@ class Teraha extends React.Component<{}, terahaState> {
         episode: episode,
       });
     }
-    console.log(
-      `series ${formData.get("series")}, part ${formData.get(
-        "part"
-      )}, episode ${formData.get("episode")}`
-    );
+    // console.log(
+    //   `series ${formData.get("series")}, part ${formData.get(
+    //     "part"
+    //   )}, episode ${formData.get("episode")}`
+    // );
     const twitterLink = this.generateTwitterLink(
       series,
       part,
@@ -160,7 +180,7 @@ class Teraha extends React.Component<{}, terahaState> {
       );
     } else {
       window.open(twitterLink, "_blank", "noopener,noreferrer");
-      console.log(e);
+      console.error(e);
     }
   }
 
@@ -237,6 +257,7 @@ class Teraha extends React.Component<{}, terahaState> {
                 name="episode"
                 id="episode"
                 defaultValue={this.state.episode}
+                onChange={this.handleEpisodeChange}
               >
                 {jsxEpisodes}
               </Select>
