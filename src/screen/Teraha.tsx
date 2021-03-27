@@ -29,14 +29,16 @@ class Teraha extends React.Component<{}, terahaState> {
       series: 1,
       part: 1,
       episode: 1,
-      searchWord: "テラスハウス",
+      searchWord: "テラハ",
       broadcastType: "Netflix",
     };
 
     this.generateTwitterLink = this.generateTwitterLink.bind(this);
+    this.generateSearchWord = this.generateSearchWord.bind(this);
     this.addDays = this.addDays.bind(this);
     this.handleSeriesChange = this.handleSeriesChange.bind(this);
     this.handlePartChange = this.handlePartChange.bind(this);
+    this.handleSearchWordChange = this.handleSearchWordChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -79,6 +81,36 @@ class Teraha extends React.Component<{}, terahaState> {
     }
   }
 
+  generateSearchWord() {
+    // get members
+    const members = TerahaInfo[this.state.series - 1].members;
+    if (members) {
+      alert(members);
+      const appearingMembers = members.filter((member) => {
+        console.log(member);
+        console.log(this.state.episode);
+        return (
+          member.startEp <= this.state.episode &&
+          member.endEp >= this.state.episode
+        );
+      });
+      console.log(appearingMembers);
+
+      const nicknames: string[] = [];
+      for (const m of appearingMembers) {
+        for (const nn of m.nicknames) {
+          nicknames.push(nn);
+        }
+      }
+
+      const randomNickname =
+        nicknames[Math.floor(Math.random() * nicknames.length)];
+      this.setState({ searchWord: `テラハ ${randomNickname}` });
+    } else {
+      alert("検索ワードの生成に失敗しました");
+    }
+  }
+
   handleSeriesChange(e: React.ChangeEvent<{ value: unknown }>) {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
     tsCopy.series = parseInt(e.target.value as string);
@@ -89,6 +121,10 @@ class Teraha extends React.Component<{}, terahaState> {
     const tsCopy = JSON.parse(JSON.stringify(this.state));
     tsCopy.part = parseInt(e.target.value as string);
     this.setState(tsCopy);
+  }
+
+  handleSearchWordChange(e: React.ChangeEvent<HTMLInputElement>) {
+    this.setState({ searchWord: e.target.value });
   }
 
   handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -221,20 +257,26 @@ class Teraha extends React.Component<{}, terahaState> {
               </Select>
             </FormControl>
           </Box>
-          <Box mb={2}>
+          <Box mb={5}>
             <FormControl>
               <TextField
                 type="text"
                 name="searchWord"
                 id="searchWord"
-                defaultValue={this.state.searchWord}
+                value={this.state.searchWord}
+                onChange={this.handleSearchWordChange}
                 variant="outlined"
               />
+              <Button variant="outlined" onClick={this.generateSearchWord}>
+                ランダムキーワード
+              </Button>
             </FormControl>
           </Box>
-          <Box mb={2}>
+          <Box mb={5}>
             <div>
-              <Button type="submit">👉Twitterへのリンク👈</Button>
+              <Button type="submit" variant="outlined">
+                👉Twitterへのリンク👈
+              </Button>
             </div>
           </Box>
         </form>
