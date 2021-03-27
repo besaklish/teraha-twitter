@@ -2,6 +2,110 @@
   { "season": 1, "parts": [] },
   {
     "season": 2,
+    "members": [
+      {
+        "name": "長谷川慎",
+        "nicknames": ["まこと", "まこっちゃん"],
+        "startEp": 1,
+        "endEp": 11
+      },
+      {
+        "name": "中田みのり",
+        "nicknames": ["みのり"],
+        "startEp": 1,
+        "endEp": 24
+      },
+      {
+        "name": "安達雄基",
+        "nicknames": ["ゆうき", "タップ"],
+        "startEp": 1,
+        "endEp": 17
+      },
+      {
+        "name": "信太美月",
+        "nicknames": ["みずき", "みづき", "バリスタ"],
+        "startEp": 1,
+        "endEp": 17
+      },
+      {
+        "name": "内原達也",
+        "nicknames": ["うっちー", "うっち", "たつや"],
+        "startEp": 1,
+        "endEp": 24
+      },
+      {
+        "name": "早田悠里子",
+        "nicknames": ["ゆり", "ゆりこ"],
+        "startEp": 1,
+        "endEp": 13
+      },
+      {
+        "name": "ビタラフ・アルマン",
+        "nicknames": ["アーマン", "アルマン"],
+        "startEp": 11,
+        "endEp": 46
+      },
+      {
+        "name": "大畑ありさ",
+        "nicknames": ["ありさ"],
+        "startEp": 13,
+        "endEp": 28
+      },
+      {
+        "name": "太田光る",
+        "nicknames": ["ひかる"],
+        "startEp": 19,
+        "endEp": 32
+      },
+      {
+        "name": "斎藤夏美",
+        "nicknames": ["なつみ", "なっちゃん"],
+        "startEp": 19,
+        "endEp": 32
+      },
+      {
+        "name": "田森美咲",
+        "nicknames": ["みさき", "たもさん"],
+        "startEp": 24,
+        "endEp": 46
+      },
+      {
+        "name": "半田悠人",
+        "nicknames": ["半さん", "はんさん", "ゆうと"],
+        "startEp": 25,
+        "endEp": 35
+      },
+      {
+        "name": "永井理子",
+        "nicknames": ["りこ", "りこぴん"],
+        "startEp": 29,
+        "endEp": 46
+      },
+      {
+        "name": "光永百花",
+        "nicknames": ["ももか", "ももちゃん"],
+        "startEp": 32,
+        "endEp": 39
+      },
+      {
+        "name": "寺島速人",
+        "nicknames": ["はやと"],
+        "startEp": 32,
+        "endEp": 46
+      },
+      {
+        "name": "バーンズ勇気",
+        "nicknames": ["ゆうき", "バーンズ", "勇気"],
+        "startEp": 36,
+        "endEp": 46
+      },
+      {
+        "name": "遠藤政子",
+        "nicknames": ["まさこ", "まあさ", "まーさ"],
+        "startEp": 39,
+        "endEp": 46
+      }
+    ],
     "parts": [
       {
         "part": 1,
