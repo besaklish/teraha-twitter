@@ -54,7 +54,7 @@ class Teraha extends React.Component<{}, terahaState> {
       const episodeInfo =
         TerahaInfo[series - 1].parts[part - 1].episodes[episode - 1];
       if (episodeInfo) {
-        const since = episodeInfo.date;
+        const since = episodeInfo.netflixDate;
         const untilDate = this.addDays(since, untilDays);
         const until = untilDate.toISOString().slice(0, 10);
         return `https://twitter.com/search?q=${searchWord}%20until%3A${until}%20since%3A${since}`;
