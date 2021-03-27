@@ -24,7 +24,7 @@ class Teraha extends React.Component<{}, terahaState> {
       series: 1,
       part: 1,
       episode: 1,
-      searchWord: "テラハ",
+      searchWord: "テラスハウス",
     };
 
     this.generateTwitterLink = this.generateTwitterLink.bind(this);
