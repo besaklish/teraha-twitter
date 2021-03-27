@@ -114,6 +114,141 @@
             "number": 19,
             "date": "2016-02-08",
             "title": "A Christmas Nightmare"
+          },
+          {
+            "number": 20,
+            "date": "2016-02-15",
+            "title": "Scissorhands"
+          },
+          {
+            "number": 21,
+            "date": "2016-02-22",
+            "title": "Case of Poke Bowl"
+          },
+          {
+            "number": 22,
+            "date": "2016-02-29",
+            "title": "Case of the Meat"
+          },
+          {
+            "number": 23,
+            "date": "2016-03-14",
+            "title": "No Use Crying over Meat"
+          },
+          {
+            "number": 24,
+            "date": "2016-03-21",
+            "title": "New It-Girl in the City"
+          },
+          {
+            "number": 25,
+            "date": "2016-03-28",
+            "title": "Mr. Perfect in the City"
+          },
+          {
+            "number": 26,
+            "date": "2016-04-04",
+            "title": "Love Is in the Air"
+          },
+          {
+            "number": 27,
+            "date": "2016-04-11",
+            "title": "Always Smiling with You"
+          },
+          {
+            "number": 28,
+            "date": "2016-04-18",
+            "title": "Cry, Cry, Cry"
+          },
+          {
+            "number": 29,
+            "date": "2016-04-25",
+            "title": "Nightie Nightmare"
+          },
+          {
+            "number": 30,
+            "date": "2016-05-09",
+            "title": "Girl's Decision in Love"
+          },
+          {
+            "number": 31,
+            "date": "2016-05-23",
+            "title": "Natsumi & Fuyumi"
+          },
+          {
+            "number": 32,
+            "date": "2016-05-30",
+            "title": "Shall We Pas de Deux?"
+          },
+          {
+            "number": 33,
+            "date": "2016-06-06",
+            "title": "First Dip in the Pool"
+          },
+          {
+            "number": 34,
+            "date": "2016-06-13",
+            "title": "Hamburg × Hamburg"
+          },
+          {
+            "number": 35,
+            "date": "2016-06-27",
+            "title": "Bye Bye Mr. Perfect"
+          },
+          {
+            "number": 36,
+            "date": "2016-07-04",
+            "title": "Byrnes Sandwich"
+          },
+          {
+            "number": 37,
+            "date": "2016-07-11",
+            "title": "Slow Down Your Love"
+          },
+          {
+            "number": 38,
+            "date": "2016-07-18",
+            "title": "Quick to Say I Love You"
+          },
+          {
+            "number": 39,
+            "date": "2016-08-02",
+            "title": "Rocket Girl Dives into Love"
+          },
+          {
+            "number": 40,
+            "date": "2016-08-09",
+            "title": "Midsummer Intimacy"
+          },
+          {
+            "number": 41,
+            "date": "2016-08-16",
+            "title": "Better Luck This Time"
+          },
+          {
+            "number": 42,
+            "date": "2016-08-23",
+            "title": "Fragile Boy, Fragile Girl"
+          },
+          {
+            "number": 43,
+            "date": "2016-09-06",
+            "title": "Kiss and Tell"
+          },
+          {
+            "number": 44,
+            "date": "2016-09-13",
+            "title": "Price of a Lie"
+          },
+          {
+            "number": 45,
+            "date": "2016-09-20",
+            "title": "The Riko Special"
+          },
+          {
+            "number": 46,
+            "date": "2016-09-27",
+            "title": "Bye Bye Terrace House in the City"
           }
         ]
       }
@@ -121,7 +256,220 @@
   },
   {
     "season": 3,
-    "parts": []
+    "parts": [
+      {
+        "part": 1,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2016-11-01",
+            "title": "Terrace House in Aloha State"
+          },
+          {
+            "number": 2,
+            "date": "2016-11-08",
+            "title": "The 18-Year-Old Madonna"
+          },
+          {
+            "number": 3,
+            "date": "2016-11-15",
+            "title": "The Reason Why He Can't Get a Girlfriend"
+          },
+          {
+            "number": 4,
+            "date": "2016-11-22",
+            "title": "More Than a Hug"
+          },
+          {
+            "number": 5,
+            "date": "2016-12-06",
+            "title": "Living in a Shared House Is Tough"
+          },
+          {
+            "number": 6,
+            "date": "2016-12-13",
+            "title": "Making My Move"
+          },
+          {
+            "number": 7,
+            "date": "2016-12-20",
+            "title": "She Is a Legend"
+          },
+          {
+            "number": 8,
+            "date": "2016-12-27",
+            "title": "Taste of Catfish on the First Date"
+          }
+        ]
+      },
+      {
+        "part": 2,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2017-01-10",
+            "title": "Black Tears"
+          },
+          {
+            "number": 2,
+            "date": "2017-01-17",
+            "title": "It's You"
+          },
+          {
+            "number": 3,
+            "date": "2017-01-24",
+            "title": "A Love to Die For"
+          },
+          {
+            "number": 4,
+            "date": "2017-01-31",
+            "title": "Pretty Guy"
+          },
+          {
+            "number": 5,
+            "date": "2017-02-14",
+            "title": "A Secret Crush"
+          },
+          {
+            "number": 6,
+            "date": "2017-02-21",
+            "title": "Love Kicks Off"
+          },
+          {
+            "number": 7,
+            "date": "2017-02-28",
+            "title": "One Direction"
+          },
+          {
+            "number": 8,
+            "date": "2017-03-07",
+            "title": "The Pipeline: Where Surfing Lives"
+          }
+        ]
+      },
+      {
+        "part": 3,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2017-03-21",
+            "title": "Shirofune"
+          },
+          {
+            "number": 2,
+            "date": "2017-03-28",
+            "title": "Everyone's Sweetheart"
+          },
+          {
+            "number": 3,
+            "date": "2017-04-04",
+            "title": "A Long & Winding Road to Love"
+          },
+          {
+            "number": 4,
+            "date": "2017-04-11",
+            "title": "Guilty Samurai"
+          },
+          {
+            "number": 5,
+            "date": "2017-04-25",
+            "title": "Plan it or Wing it"
+          },
+          {
+            "number": 6,
+            "date": "2017-05-02",
+            "title": "Losing the Lead Role"
+          },
+          {
+            "number": 7,
+            "date": "2017-05-09",
+            "title": "She's Not Much of a Nature-Lover"
+          },
+          {
+            "number": 8,
+            "date": "2017-05-16",
+            "title": "A Kiss in the Moment"
+          }
+        ]
+      },
+      {
+        "part": 4,
+        "day": "Tuesday",
+        "time": "00:00",
+        "duration": 30,
+        "episodes": [
+          {
+            "number": 1,
+            "date": "2017-05-30",
+            "title": "I Love You, Sayonara"
+          },
+          {
+            "number": 2,
+            "date": "2017-06-06",
+            "title": "Erotic Frequency"
+          },
+          {
+            "number": 3,
+            "date": "2017-06-13",
+            "title": "No One Like You"
+          },
+          {
+            "number": 4,
+            "date": "2017-06-20",
+            "title": "Isn't She Just a Bitch?"
+          },
+          {
+            "number": 5,
+            "date": "2017-07-04",
+            "title": "Too Much"
+          },
+          {
+            "number": 6,
+            "date": "2017-07-11",
+            "title": "The Secret Hook Up"
+          },
+          {
+            "number": 7,
+            "date": "2017-07-18",
+            "title": "Lonesome Women"
+          },
+          {
+            "number": 8,
+            "date": "2017-07-25",
+            "title": "The Monster She Made"
+          },
+          {
+            "number": 9,
+            "date": "2017-08-08",
+            "title": "The Blues of Bruno Mars"
+          },
+          {
+            "number": 10,
+            "date": "2017-08-15",
+            "title": "Breakdown"
+          },
+          {
+            "number": 11,
+            "date": "2017-08-22",
+            "title": "Shinuhodo No Koi"
+          },
+          {
+            "number": 12,
+            "date": "2017-08-29",
+            "title": "Bye Bye Terrace House in Aloha State"
+          }
+        ]
+      }
+    ]
   },
   {
     "season": 4,
