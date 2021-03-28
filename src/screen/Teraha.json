@@ -108,6 +108,11 @@
     ],
     "events": [
       {
+        "name": "コストコ",
+        "startEp": 16,
+        "endEp": 16
+      },
+      {
         "name": "お肉事件",
         "startEp": 22,
         "endEp": 23
