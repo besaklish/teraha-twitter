@@ -131,9 +131,10 @@ class Teraha extends React.Component<{}, terahaState> {
 
     const randomSearchWord =
       randomSearchWords[Math.floor(Math.random() * randomSearchWords.length)];
-    this.setState({ searchWord: `テラハ ${randomSearchWord}` });
 
-    if (randomSearchWord.length === 0) {
+    if (randomSearchWord) {
+      this.setState({ searchWord: `テラハ ${randomSearchWord}` });
+    } else {
       alert("検索ワードの生成に失敗しました");
     }
   }
