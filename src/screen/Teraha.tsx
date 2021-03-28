@@ -59,9 +59,6 @@ class Teraha extends React.Component<{}, terahaState> {
     untilDays: number = 3
   ): string {
     try {
-      // console.log(
-      //   `generateTwitterLink, series ${series}, part ${part}, episode ${episode}`
-      // );
       const episodeInfo =
         TerahaInfo[series - 1].parts[part - 1].episodes[episode - 1];
       if (episodeInfo) {
@@ -100,14 +97,14 @@ class Teraha extends React.Component<{}, terahaState> {
   generateSearchWord() {
     // get members
     const members = TerahaInfo[this.state.series - 1].members;
+    const events = TerahaInfo[this.state.series - 1].events;
+    const epNum = this.calcEpisodeNumber();
+    const randomSearchWords = [];
+
     if (members) {
-      const epNum = this.calcEpisodeNumber();
-      console.log(epNum);
       const appearingMembers = members.filter((member) => {
         return member.startEp <= epNum && member.endEp >= epNum;
       });
-
-      console.log(appearingMembers);
 
       const nicknames: string[] = [];
       for (const m of appearingMembers) {
@@ -116,10 +113,27 @@ class Teraha extends React.Component<{}, terahaState> {
         }
       }
 
-      const randomNickname =
-        nicknames[Math.floor(Math.random() * nicknames.length)];
-      this.setState({ searchWord: `テラハ ${randomNickname}` });
-    } else {
+      randomSearchWords.push(...nicknames);
+    }
+
+    if (events) {
+      const happeningEvents = events.filter((event) => {
+        return event.startEp <= epNum && event.endEp >= epNum;
+      });
+
+      const happeningEventNames: string[] = [];
+      for (const event of happeningEvents) {
+        happeningEventNames.push(event.name);
+      }
+
+      randomSearchWords.push(...happeningEventNames);
+    }
+
+    const randomSearchWord =
+      randomSearchWords[Math.floor(Math.random() * randomSearchWords.length)];
+    this.setState({ searchWord: `テラハ ${randomSearchWord}` });
+
+    if (randomSearchWord.length === 0) {
       alert("検索ワードの生成に失敗しました");
     }
   }
@@ -161,11 +175,6 @@ class Teraha extends React.Component<{}, terahaState> {
         episode: episode,
       });
     }
-    // console.log(
-    //   `series ${formData.get("series")}, part ${formData.get(
-    //     "part"
-    //   )}, episode ${formData.get("episode")}`
-    // );
     const twitterLink = this.generateTwitterLink(
       series,
       part,

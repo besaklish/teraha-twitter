@@ -106,6 +106,13 @@
         "endEp": 46
       }
     ],
+    "events": [
+      {
+        "name": "お肉事件",
+        "startEp": 22,
+        "endEp": 23
+      }
+    ],
     "parts": [
       {
         "part": 1,
@@ -1271,6 +1278,13 @@
         "nicknames": ["りょう"],
         "startEp": 18,
         "endEp": 32
+      }
+    ],
+    "events": [
+      {
+        "name": "告白",
+        "startEp": 12,
+        "endEp": 13
       }
     ],
     "parts": [
