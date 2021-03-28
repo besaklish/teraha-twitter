@@ -83,14 +83,15 @@ class Teraha extends React.Component<{}, terahaState> {
   calcEpisodeNumber(): number {
     const season = TerahaInfo[this.state.series - 1];
     const parts = season.parts;
+    if (!parts) {
+      return -1;
+    }
     const episodes = [];
     for (let i = 0; i < this.state.part - 1; i++) {
       for (const episode of parts[i].episodes) {
         episodes.push(episode);
       }
     }
-    console.log(episodes.length);
-    console.log(this.state.episode);
     return episodes.length + this.state.episode;
   }
 
